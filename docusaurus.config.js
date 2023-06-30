@@ -6,20 +6,21 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'TechStackPlaybook',
+  tagline: 'Technology is super cool!',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://devsintech.netlify.app/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
+  // baseUrl: '/techstackplaybook/',
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'DevsInTech', // Usually your GitHub org/user name.
+  projectName: 'TechStackPlaybook', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -42,15 +43,15 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/devs-in-tech/TechStackPlaybook',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
+        // blog: {
+        //   showReadingTime: true,
+        //   // Please change this to your repo.
+        //   // Remove this to remove the "edit this page" links.
+        //   editUrl:
+        //     'https://github.com/devs-in-tech/TechStackPlaybook/tree/main/packages/create-docusaurus/templates/shared/',
+        // },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -64,21 +65,21 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'TechStackPlaybook',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'TechStackPlaybook Logo',
           src: 'img/logo.svg',
         },
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'resourceSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Resources',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          // { to: '/blog', label: 'Blog', position: 'left' },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/devs-in-tech/TechStackPlaybook',
             label: 'GitHub',
             position: 'right',
           },
@@ -88,11 +89,35 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Resources',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Artificial Intelligence',
+                to: '/docs/AI',
+              },
+              {
+                label: 'AR/VR',
+                to: '/docs/AR-VR',
+              },
+              {
+                label: 'Web3',
+                to: '/docs/Web3',
+              },
+              {
+                label: 'Frontend Development',
+                to: '/docs/Frontend-Web-Dev',
+              },
+              {
+                label: 'Backend Development',
+                to: '/docs/Backend-Web-Dev',
+              },
+              {
+                label: 'Cloud Computing',
+                to: '/docs/Cloud',
+              },
+              {
+                label: 'DevOps',
+                to: '/docs/DevOps',
               },
             ],
           },
@@ -100,16 +125,12 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://discord.com/invite/g7FmxB9uZp',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://twitter.com/devs_in_tech',
               },
             ],
           },
@@ -117,17 +138,21 @@ const config = {
             title: 'More',
             items: [
               {
+                label: 'Website',
+                to: 'https://devsintech.vercel.app/',
+              },
+              {
                 label: 'Blog',
-                to: '/blog',
+                to: 'https://devsintech.hashnode.dev/',
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/devs-in-tech/TechStackPlaybook',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} DevsInTech. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
